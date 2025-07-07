@@ -22,6 +22,18 @@ map("n", "<leader>rn", "<CMD>set rnu!<CR>", { desc = "Toggle relative line numbe
 map("n", "<leader>v", "<CMD>vsplit<CR>", { desc = "Create a vertical split" })
 map("n", "<leader>h", "<CMD>split<CR>", { desc = "Create a horizontal split" })
 
+-- Buffer swtiching
+map("n", "<M-1>", "<CMD>BufferGoto 1<CR>", { desc = "Go to buffer 1", noremap = true })
+map("n", "<M-2>", "<CMD>BufferGoto 2<CR>", { desc = "Go to buffer 2", noremap = true })
+map("n", "<M-3>", "<CMD>BufferGoto 3<CR>", { desc = "Go to buffer 3", noremap = true })
+map("n", "<M-4>", "<CMD>BufferGoto 4<CR>", { desc = "Go to buffer 4", noremap = true })
+map("n", "<M-5>", "<CMD>BufferGoto 5<CR>", { desc = "Go to buffer 5", noremap = true })
+map("n", "<M-6>", "<CMD>BufferGoto 6<CR>", { desc = "Go to buffer 6", noremap = true })
+map("n", "<M-7>", "<CMD>BufferGoto 7<CR>", { desc = "Go to buffer 7", noremap = true })
+map("n", "<M-8>", "<CMD>BufferGoto 8<CR>", { desc = "Go to buffer 8", noremap = true })
+map("n", "<M-9>", "<CMD>BufferGoto 9<CR>", { desc = "Go to buffer 9", noremap = true })
+map("n", "<M-0>", "<CMD>BufferGoto 10<CR>", { desc = "Go to buffer 10", noremap = true })
+
 -- LSP actions
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
 map("n", "<leader>cx", "<CMD>ContextToggle<CR>", { desc = "Toggle context" })
