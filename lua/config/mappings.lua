@@ -99,7 +99,7 @@ map("n", "<leader>st", function()
 end, { desc = "Switch the color scheme" })
 
 -- Diagnostics
-map("n", "<leader>dx", function() Snacks.picker.diagnostics() end, { desc = "Diagnostics (Trouble)" })
+map("n", "<leader>dx", function() Snacks.picker.diagnostics() end, { desc = "Diagnostics" })
 
 -- Silicon
 wk.add({
