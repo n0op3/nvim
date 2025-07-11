@@ -67,7 +67,7 @@ map("n", "<leader>rs", function()
 -- Find
 map("n", "<leader>fb", function() Snacks.picker.buffers() end, { desc = "Search buffers" })
 map("n", "<leader>fc", function() Snacks.picker.command_history() end, { desc = "Show commands history" })
-map("n", "<leader>ff", function() Snacks.picker.files() end, { desc = "Search files" })
+map("n", "<leader>ff", function() Snacks.picker.files({ hidden = true }) end, { desc = "Search files" })
 map("n", "<leader>fj", function() Snacks.picker.jumps() end, { desc = "Search jumps" })
 
 -- Git
