@@ -22,6 +22,12 @@ map("n", "<leader>rn", "<CMD>set rnu!<CR>", { desc = "Toggle relative line numbe
 map("n", "<leader>v", "<CMD>vsplit<CR>", { desc = "Create a vertical split" })
 map("n", "<leader>h", "<CMD>split<CR>", { desc = "Create a horizontal split" })
 
+-- Resizing windows
+map("n", "<M-h>", "<C-w><", { desc = "Decrease size right" })
+map("n", "<M-j>", "<C-w>-", { desc = "Decrease size up" })
+map("n", "<M-k>", "<C-w>+", { desc = "Increase size up" })
+map("n", "<M-l>", "<C-w>>", { desc = "Incrase size right" })
+
 -- Buffer swtiching
 map("n", "<M-1>", "<CMD>BufferGoto 1<CR>", { desc = "Go to buffer 1", noremap = true })
 map("n", "<M-2>", "<CMD>BufferGoto 2<CR>", { desc = "Go to buffer 2", noremap = true })
