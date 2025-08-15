@@ -115,18 +115,3 @@ wk.add({
     { "<leader>sf", function() require("nvim-silicon").file() end,  desc = "Save code screenshot as file" },
     { "<leader>ss", function() require("nvim-silicon").shoot() end, desc = "Create code screenshot" },
 })
-
--- Obsidian
-wk.add({
-    mode = { "n" },
-    { "<leader>o",        group = "Obsidian" },
-    { "<leader>oo",       "<CMD>ObsidianOpen<CR>",           desc = "Open current note in Obsidian" },
-    { "<leader>on",       "<CMD>ObsidianNew<CR>",            desc = "Create new note" },
-    { "<leader>oq",       "<CMD>ObsidianQuickSwitch<CR>",    desc = "Open note switcher" },
-    { "<leader>of",       "<CMD>ObsidianFollowLink<CR>",     desc = "Follow link" },
-    { "<leader>ow",       "<CMD>ObsidianWorkspace<CR>",      desc = "Switch workspaces" },
-    { "<leader>or",       "<CMD>ObsidianRename<CR>",         desc = "Rename current note" },
-    { "<leader>ot",       "<CMD>ObsidianTOC<CR>",            desc = "Open Table of Contents" },
-    { "<leader>op",       "<CMD>ObsidianPasteImg<CR>",       desc = "Paste an image" },
-    { "<leader><leader>", "<CMD>ObsidianToggleCheckbox<CR>", desc = "Toggle checkbox" },
-})
