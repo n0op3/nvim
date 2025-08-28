@@ -1,11 +1,6 @@
 return {
-    "rcarriga/nvim-dap-ui",
-    "mfussenegger/nvim-dap",
-    "nvim-neotest/nvim-nio",
-    {
-        "jay-babu/mason-nvim-dap.nvim",
-        event = "VeryLazy",
-        opts = { handlers = {} }
-    },
-    "theHamsta/nvim-dap-virtual-text",
+    { "mfussenegger/nvim-dap" },
+    { "rcarriga/nvim-dap-ui",           dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
+    { "theHamsta/nvim-dap-virtual-text" },
+    { "simrat39/rust-tools.nvim" },
 }
