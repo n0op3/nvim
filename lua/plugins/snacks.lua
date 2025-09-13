@@ -1,6 +1,9 @@
 return {
     "folke/snacks.nvim",
     opts = {
+        picker = {
+            follow = true
+        },
         dashboard = {
             sections = {
                 { section = "header" },
