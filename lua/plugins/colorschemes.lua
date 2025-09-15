@@ -10,5 +10,6 @@ return {
     { "doums/darcula",                    name = "Darcula Color Scheme" },
     { "nyoom-engineering/oxocarbon.nvim", name = "Oxycarbox Color Scheme" },
     { "scottmckendry/cyberdream.nvim",    name = "Cyberdream Color Scheme" },
-    { "olimorris/onedarkpro.nvim",        name = "OneDarkPro Color Scheme" }
+    { "olimorris/onedarkpro.nvim",        name = "OneDarkPro Color Scheme" },
+    { "AlexvZyl/nordic.nvim",             name = "Nordic Color Scheme" },
 }
