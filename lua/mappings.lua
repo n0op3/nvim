@@ -12,10 +12,6 @@ map("n", "j", "gj")
 map("n", "k", "gk")
 map("n", "<C-S-K>", vim.cmd.bnext)
 map("n", "<C-S-J>", vim.cmd.bprev)
-map("n", "<C-H>", "<C-W>h", { noremap = true })
-map("n", "<C-J>", "<C-W>j", { noremap = true })
-map("n", "<C-K>", "<C-W>k", { noremap = true })
-map("n", "<C-L>", "<C-W>l", { noremap = true })
 
 -- Windows
 map("n", "<M-h>", "<C-W><", { noremap = true })
