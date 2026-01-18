@@ -1,4 +1,5 @@
 require("mappings")
+require("config.persist-colorscheme")
 
 vim.opt.guicursor = "n-v-c:block"
 vim.opt.winborder = "rounded"
