@@ -1,5 +1,5 @@
 require("config.pre-setup")
-require("config.persist-colorscheme")
 require("config.lazy")
+require("config.persist-colorscheme")
 require("options")
 require("mason-lspconfig").setup()
