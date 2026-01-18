@@ -2,6 +2,7 @@ require("mappings")
 
 vim.opt.guicursor = "n-v-c:block"
 vim.opt.background = "dark"
+vim.opt.winborder = "single"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -20,3 +21,17 @@ vim.opt.foldlevel = 99
 vim.opt.foldenable = true
 
 vim.opt.conceallevel = 2
+
+vim.diagnostic.config({
+    signs = {
+        text = {
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.WARN] = "⚠",
+            [vim.diagnostic.severity.HINT] = "",
+            [vim.diagnostic.severity.INFO] = "",
+        },
+    },
+    underline = true,
+    update_in_insert = false,
+    severity_sort = true,
+})
