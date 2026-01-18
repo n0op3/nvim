@@ -1,2 +1,2 @@
 require("config.lazy")
-require("mason-lspconfig")
+require("mason-lspconfig").setup()
