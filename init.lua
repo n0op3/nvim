@@ -1,3 +1,4 @@
+require("config.pre-setup")
 require("config.persist-colorscheme")
 require("config.lazy")
 require("options")
