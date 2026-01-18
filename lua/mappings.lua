@@ -16,10 +16,14 @@ map("n", "<C-H>", "<C-W>h", { noremap = true })
 map("n", "<C-J>", "<C-W>j", { noremap = true })
 map("n", "<C-K>", "<C-W>k", { noremap = true })
 map("n", "<C-L>", "<C-W>l", { noremap = true })
+
+-- Windows
 map("n", "<M-h>", "<C-W><", { noremap = true })
 map("n", "<M-j>", "<C-W>-", { noremap = true })
 map("n", "<M-k>", "<C-W>+", { noremap = true })
 map("n", "<M-l>", "<C-W>>", { noremap = true })
+
+-- Buffers
 map("n", "<leader>v", "<C-W>v", { noremap = true })
 map("n", "<leader>h", "<C-W>s", { noremap = true })
 map("n", "<leader>x", vim.cmd.bdelete)
@@ -27,7 +31,7 @@ map("n", "<leader>x", vim.cmd.bdelete)
 -- Search
 map("n", "<leader>ff", telescope.find_files, { desc = "Telescope find files" })
 map("n", "<leader>fg", telescope.live_grep, { desc = "Telescope live grep" })
-map("n", "<leader>fb", telescope.buffers, { desc = "Telescope buffers" })
+map("n", "<leader>b", telescope.buffers, { desc = "Telescope buffers" })
 map("n", "<leader>gf", telescope.live_grep, { desc = "Find string" })
 map("n", "<leader>fb", telescope.buffers, { desc = "Find buffers" })
 map("n", "<leader>fm", telescope.marks, { desc = "Find marks" })
