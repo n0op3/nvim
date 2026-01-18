@@ -1,11 +1,14 @@
 require("mappings")
 
+vim.notify = require("notify")
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.guicursor = "n-v-c:block"
 vim.opt.background = "dark"
 vim.opt.winborder = "single"
+vim.opt.termguicolors = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
