@@ -41,6 +41,7 @@ map("n", "<leader>ca", function() require("tiny-code-action").code_action() end,
 map("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 map("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 map("n", "<leader>bf", "<CMD>ToggleFormatting<CR>", { desc = "Toggle LSP formatting for the current buffer" })
+map("n", "<leader>cs", function() require("telescope").extensions.aerial.aerial() end, { desc = "Code symbols" })
 
 -- Git
 map("n", "<leader>gl", telescope.git_commits, { desc = "Git log" })
