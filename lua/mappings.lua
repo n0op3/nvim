@@ -40,6 +40,7 @@ map("n", "<leader>fr", telescope.registers, { desc = "Find registers" })
 -- LSP
 map("n", "<leader>rx", telescope.lsp_references, { desc = "LSP references" })
 map("n", "<leader>dx", telescope.diagnostics, { desc = "Telescope diagnostics" })
+map("n", "<leader>ra", vim.lsp.buf.rename, { desc = "Rename occurences" })
 map("n", "<leader>ca", function() require("tiny-code-action").code_action() end, { desc = "Code actions" })
 map("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 map("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
