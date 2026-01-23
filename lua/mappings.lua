@@ -10,8 +10,8 @@ map("n", ";", ":")
 -- Movement
 map("n", "j", "gj")
 map("n", "k", "gk")
-map("n", "<C-S-K>", vim.cmd.bnext)
-map("n", "<C-S-J>", vim.cmd.bprev)
+map("n", "<C-K>", vim.cmd.bnext)
+map("n", "<C-J>", vim.cmd.bprev)
 
 -- Windows
 map("n", "<M-h>", "<C-W><", { noremap = true })
