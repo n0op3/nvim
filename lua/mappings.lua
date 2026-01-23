@@ -12,17 +12,15 @@ map("n", "j", "gj")
 map("n", "k", "gk")
 map("n", "<C-K>", vim.cmd.bnext)
 map("n", "<C-J>", vim.cmd.bprev)
+map("n", "<leader>x", vim.cmd.bdelete)
 
 -- Windows
 map("n", "<M-h>", "<C-W><", { noremap = true })
 map("n", "<M-j>", "<C-W>-", { noremap = true })
 map("n", "<M-k>", "<C-W>+", { noremap = true })
 map("n", "<M-l>", "<C-W>>", { noremap = true })
-
--- Buffers
 map("n", "<leader>v", "<C-W>v", { noremap = true })
 map("n", "<leader>h", "<C-W>s", { noremap = true })
-map("n", "<leader>x", vim.cmd.bdelete)
 
 -- Search
 map("n", "<leader>ff", telescope.find_files, { desc = "Telescope find files" })
