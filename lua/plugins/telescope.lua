@@ -15,7 +15,10 @@ return {
                         ["<C-x>"] = "delete_buffer"
                     }
                 }
-            }
+            },
+            find_files = {
+                find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*", "-L" },
+            },
         }
     }
 }
