@@ -5,4 +5,5 @@ return {
     { "ellisonleao/gruvbox.nvim",         name = "Gruvbox Color Scheme" },
     { "olimorris/onedarkpro.nvim",        name = "OneDarkPro Color Scheme" },
     { "nyoom-engineering/oxocarbon.nvim", name = "Oxycarbox Color Scheme" },
+    { "folke/tokyonight.nvim",            name = "Tokyonight Color Scheme" },
 }

@@ -5,6 +5,7 @@
   "OneDarkPro Color Scheme": { "branch": "main", "commit": "743bf248cf238a0625f3a204eecefafcf6281a9f" },
   "Oxycarbox Color Scheme": { "branch": "main", "commit": "9f85f6090322f39b11ae04a343d4eb9d12a86897" },
   "Rose Pine Color Scheme": { "branch": "main", "commit": "cf2a288696b03d0934da713d66c6d71557b5c997" },
+  "Tokyonight Color Scheme": { "branch": "main", "commit": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd" },
   "aerial.nvim": { "branch": "master", "commit": "7a6a42791eb2b54a7115c7db4488981f93471770" },
   "alpha-nvim": { "branch": "main", "commit": "3979b01cb05734331c7873049001d3f2bb8477f4" },
   "auto-session": { "branch": "main", "commit": "292492ab7af4bd8b9e37e28508bc8ce995722fd5" },
@@ -31,7 +32,7 @@
   "tiny-code-action.nvim": { "branch": "main", "commit": "6ded5f7cf53e8d804ab4fdc1d728f47ab772007e" },
   "tiny-inline-diagnostic.nvim": { "branch": "main", "commit": "ecce93ff7db4461e942c03e0fcc64bd785df4057" },
   "undotree": { "branch": "master", "commit": "178d19e00a643f825ea11d581b1684745d0c4eda" },
-  "vim-tmux-navigator": { "branch": "master", "commit": "c45243dc1f32ac6bcf6068e5300f3b2b237e576a" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
   "yazi.nvim": { "branch": "main", "commit": "4a8bd3284708e11e48bcd865892902a46abdcce0" }
 }
