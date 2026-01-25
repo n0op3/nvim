@@ -24,9 +24,9 @@ map("n", "<leader>h", "<C-W>s", { noremap = true })
 
 -- Search
 map("n", "<leader>ff", telescope.find_files, { desc = "Telescope find files" })
-map("n", "<leader>fg", telescope.live_grep, { desc = "Telescope live grep" })
 map("n", "<leader>b", telescope.buffers, { desc = "Telescope buffers" })
 map("n", "<leader>gf", telescope.live_grep, { desc = "Find string" })
+map("n", "<leader>gc", telescope.current_buffer_fuzzy_find, { desc = "Grep current buffer" })
 map("n", "<leader>fb", telescope.buffers, { desc = "Find buffers" })
 map("n", "<leader>fm", telescope.marks, { desc = "Find marks" })
 map("n", "<leader>fr", telescope.registers, { desc = "Find registers" })
