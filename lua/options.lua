@@ -9,7 +9,6 @@ vim.opt.fillchars:append({ eob = " " })
 vim.opt.guicursor = "n-v-c:block"
 vim.opt.background = "dark"
 vim.opt.winborder = "single"
-vim.opt.termguicolors = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
