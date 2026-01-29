@@ -27,7 +27,7 @@ map("n", "<leader>ff", telescope.find_files, { desc = "Telescope find files" })
 map("n", "<leader>b", telescope.buffers, { desc = "Telescope buffers" })
 map("n", "<leader>gf", telescope.live_grep, { desc = "Find string" })
 map("n", "<leader>gc", telescope.current_buffer_fuzzy_find, { desc = "Grep current buffer" })
-map("n", "<leader>fb", telescope.buffers, { desc = "Find buffers" })
+map("n", "<leader>fb", function() telescope.buffers({ sort_lastused = true }) end, { desc = "Find buffers" })
 map("n", "<leader>fm", telescope.marks, { desc = "Find marks" })
 map("n", "<leader>fr", telescope.registers, { desc = "Find registers" })
 
