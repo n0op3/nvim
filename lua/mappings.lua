@@ -10,8 +10,8 @@ map("n", ";", ":")
 -- Movement
 map("n", "j", "gj")
 map("n", "k", "gk")
-map("n", "<C-k>", vim.cmd.bnext)
-map("n", "<C-j>", vim.cmd.bprev)
+map("n", "<C-n>", vim.cmd.bnext)
+map("n", "<C-m>", vim.cmd.bprev)
 map("n", "<leader>x", vim.cmd.bdelete)
 
 -- Windows
