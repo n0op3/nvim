@@ -41,6 +41,18 @@ map("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 map("n", "<leader>bf", "<CMD>ToggleFormatting<CR>", { desc = "Toggle LSP formatting for the current buffer" })
 map("n", "<leader>cs", function() require("telescope").extensions.aerial.aerial() end, { desc = "Code symbols" })
 
+-- Debugging
+local dap = require("dap");
+map("n", "<leader>dy", function() require("dapui").toggle() end, { desc = "Toggle DAP UI", nowait = true })
+map("n", "<leader>db", function() dap.toggle_breakpoint() end, { desc = "Toggle breakpoint", nowait = true })
+map("n", "<leader>dc", function() dap.continue() end, { desc = "Debugger continue", nowait = true })
+map("n", "<leader>dl", function() dap.run_last() end, { desc = "Debug last run", nowait = true })
+map("n", "<leader>dq", function() dap.run_last() end, { desc = "Terminate debugging", nowait = true })
+map("n", "<leader>dr", function() dap.repl.toggle() end, { desc = "Toggle REPL", nowait = true })
+map("n", "<leader>di", function() dap.step_into() end, { desc = "Step into", nowait = true })
+map("n", "<leader>do", function() dap.step_over() end, { desc = "Step over", nowait = true })
+map("n", "<leader>du", function() dap.step_out() end, { desc = "Step out", nowait = true })
+
 -- Git
 map("n", "<leader>gl", telescope.git_commits, { desc = "Git log" })
 map("n", "<leader>gb", telescope.git_branches, { desc = "Git branches" })
