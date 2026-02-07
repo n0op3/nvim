@@ -39,4 +39,5 @@ vim.diagnostic.config({
     severity_sort = true,
 })
 
+vim.api.nvim_set_hl(0, "DapBreakpointColor", { fg = "#FF0000" })
 vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "DapBreakpointColor", linehl = "", numhl = "" })
