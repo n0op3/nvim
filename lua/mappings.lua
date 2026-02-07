@@ -47,7 +47,7 @@ map("n", "<leader>dy", function() require("dapui").toggle() end, { desc = "Toggl
 map("n", "<leader>db", function() dap.toggle_breakpoint() end, { desc = "Toggle breakpoint", nowait = true })
 map("n", "<leader>dc", function() dap.continue() end, { desc = "Debugger continue", nowait = true })
 map("n", "<leader>dl", function() dap.run_last() end, { desc = "Debug last run", nowait = true })
-map("n", "<leader>dq", function() dap.run_last() end, { desc = "Terminate debugging", nowait = true })
+map("n", "<leader>dq", function() dap.terminate() end, { desc = "Terminate debugging", nowait = true })
 map("n", "<leader>dr", function() dap.repl.toggle() end, { desc = "Toggle REPL", nowait = true })
 map("n", "<leader>di", function() dap.step_into() end, { desc = "Step into", nowait = true })
 map("n", "<leader>do", function() dap.step_over() end, { desc = "Step over", nowait = true })
