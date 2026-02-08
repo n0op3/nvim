@@ -2,6 +2,8 @@ local map = vim.keymap.set
 local telescope = require("telescope.builtin")
 vim.g.mapleader = " "
 
+map("n", "<CR>", function() end);
+
 -- Core
 map("n", "<leader>l", "<CMD>Lazy<CR>")
 map("n", "<leader>m", "<CMD>Mason<CR>")
