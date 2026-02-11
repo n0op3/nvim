@@ -32,6 +32,7 @@ map("n", "<leader>gc", telescope.current_buffer_fuzzy_find, { desc = "Grep curre
 map("n", "<leader>fb", function() telescope.buffers({ sort_lastused = true }) end, { desc = "Find buffers" })
 map("n", "<leader>fm", telescope.marks, { desc = "Find marks" })
 map("n", "<leader>fr", telescope.registers, { desc = "Find registers" })
+map("n", "<leader>ft", "<CMD>TodoTelescope<CR>", { desc = "Find todos" })
 
 -- LSP
 map("n", "<leader>rx", telescope.lsp_references, { desc = "LSP references" })
