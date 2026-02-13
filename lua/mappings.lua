@@ -8,6 +8,7 @@ map("n", "<CR>", function() end);
 map("n", "<leader>l", "<CMD>Lazy<CR>")
 map("n", "<leader>m", "<CMD>Mason<CR>")
 map("n", ";", ":")
+map("v", ";", ":")
 
 -- Movement
 map("n", "j", "gj")
