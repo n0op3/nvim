@@ -1,3 +1,5 @@
+vim.lsp.enable({ "rust_analyzer" })
+
 vim.api.nvim_create_user_command('RustSetAllFeatures', function()
     local clients = vim.lsp.get_clients({ name = 'rust_analyzer' })
     if #clients == 0 then
