@@ -17,7 +17,7 @@ vim.api.nvim_create_user_command('RustSetAllFeatures', function()
         local cargo = ra.cargo or {}
         ra.cargo = cargo
 
-        cargo.features = 'all'
+        cargo.allFeatures = true
         client.notify('workspace/didChangeConfiguration', { settings = client.config.settings })
     end
 
