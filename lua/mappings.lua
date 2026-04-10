@@ -14,7 +14,7 @@ map("v", ";", ":")
 map("n", "j", "gj")
 map("n", "k", "gk")
 map("n", "<C-n>", vim.cmd.bnext)
-map("n", "<C-y>", vim.cmd.bprev)
+map("n", "<C-i>", vim.cmd.bprev)
 map("n", "<leader>x", vim.cmd.bdelete)
 
 -- Windows
