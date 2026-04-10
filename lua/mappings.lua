@@ -15,7 +15,14 @@ map("n", "j", "gj")
 map("n", "k", "gk")
 map("n", "<C-n>", vim.cmd.bnext)
 map("n", "<C-i>", vim.cmd.bprev)
-map("n", "<leader>x", vim.cmd.bdelete)
+map("n", "<leader>x", function()
+    local bufs = vim.fn.getbufinfo({ buflisted = 1 })
+    if #bufs > 1 then
+        vim.cmd("bp | bd #")
+    else
+        vim.cmd("bd")
+    end
+end)
 
 -- Windows
 map("n", "<M-h>", "<C-W><", { noremap = true })
