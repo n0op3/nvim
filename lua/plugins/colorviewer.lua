@@ -1,6 +1,11 @@
 return {
-    "norcalli/nvim-colorizer.lua",
+    "uga-rosa/ccc.nvim",
     config = function()
-        require("colorizer").setup()
+        require("ccc").setup({
+            highligher = {
+                auto_enable = true,
+                lsp = true
+            }
+        })
     end
 }
