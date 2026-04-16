@@ -10,4 +10,5 @@ return {
     { "oskarnurm/koda.nvim",              name = "Koda Color Scheme" },
     { "ficd0/ashen.nvim",                 name = "Ashen Color Scheme" },
     { "Shatur/neovim-ayu",                name = "Ayu Color Scheme" },
+    { "ramojus/mellifluous.nvim",         name = "Mellifluous Color Scheme" }
 }
