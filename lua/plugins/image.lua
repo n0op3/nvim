@@ -1,3 +1,13 @@
 return {
-    "3rd/image.nvim"
+    "3rd/image.nvim",
+    opts = {
+        backend = "kitty",
+        processor = "magick_cli",
+        integrations = {
+            markdown = {
+                enabled = true,
+                filetypes = { "markdown", "vimwiki" },
+            },
+        },
+    },
 }
