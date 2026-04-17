@@ -9,5 +9,6 @@ return {
                 filetypes = { "markdown", "vimwiki" },
             },
         },
+        window_overlap_clear_enabled = true,
     },
 }
