@@ -9,7 +9,7 @@ return {
                 ui = {
                     border = vim.g.border
                 }
-            }
+            },
         },
         "neovim/nvim-lspconfig",
     },
