@@ -73,6 +73,14 @@ map("n", "<leader>gl", telescope.git_commits, { desc = "Git log" })
 map("n", "<leader>gb", telescope.git_branches, { desc = "Git branches" })
 map("n", "<leader>gs", telescope.git_status, { desc = "Git status" })
 
+-- Screenshot
+map("v", "<leader>sc", function()
+    require("nvim-silicon").clip()
+    vim.schedule(function()
+        vim.api.nvim_input('<Esc>')
+    end)
+end, { desc = "Copy Silicon screenshot to clipboard" })
+
 -- Misc
 map("v", "<leader>y", '"+y', { noremap = true, silent = true, desc = "Yank to system clipboard" })
 map("n", "<leader>st", telescope.colorscheme, { desc = "Switch colorscheme" })
