@@ -16,6 +16,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.colorcolumn = '90'
+vim.opt.textwidth = 90
 vim.opt.wrap = false
 
 vim.opt.undofile = true
