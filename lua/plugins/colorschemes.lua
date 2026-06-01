@@ -12,5 +12,6 @@ return {
     { "Shatur/neovim-ayu",                name = "Ayu Color Scheme" },
     { "ramojus/mellifluous.nvim",         name = "Mellifluous Color Scheme" },
     { "EdenEast/nightfox.nvim",           name = "Nightfox Color Scheme" },
-    { "projekt0n/github-nvim-theme",      name = "Github Color Scheme" }
+    { "projekt0n/github-nvim-theme",      name = "Github Color Scheme" },
+    { "maxmx03/solarized.nvim",           name = "Solarized Color Scheme" }
 }
