@@ -17,7 +17,6 @@
   "aerial.nvim": { "branch": "master", "commit": "28fe6e822ae344544c379d60fcb13c9519a1f08a" },
   "alpha-nvim": { "branch": "main", "commit": "6c6a89d5b068b5251c8bdf0dd57bb921bcfeeb09" },
   "auto-session": { "branch": "main", "commit": "6cde3874a9283c2db55627acca5f28e4fa402320" },
-  "aw-watcher.nvim": { "branch": "master", "commit": "c9cdc2285d384f4e2717bd3734435dfc63ff6f48" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
   "ccc.nvim": { "branch": "main", "commit": "9d1a256e006decc574789dfc7d628ca11644d4c2" },
   "dropbar.nvim": { "branch": "master", "commit": "808ba31cde89aec8833e9789f5e04557cd31c9e1" },
