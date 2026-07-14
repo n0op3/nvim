@@ -6,7 +6,6 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.fillchars:append({ eob = " " })
 
-vim.opt.guicursor = "n-v-c:block"
 vim.opt.background = "dark"
 vim.opt.winborder = "rounded"
 
