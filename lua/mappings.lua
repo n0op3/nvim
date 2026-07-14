@@ -56,6 +56,7 @@ map("n", "<leader>cs", function() require("telescope").extensions.aerial.aerial(
 local dap = require("dap");
 local dap_ui = require("dapui");
 map("n", "<leader>dy", function() dap_ui.toggle() end, { desc = "Toggle DAP UI", nowait = true })
+map("n", "<leader>dd", function() dap.repl.clear() end, { desc = "Clear REPL", nowait = true })
 map("n", "<leader>db", function() dap.toggle_breakpoint() end, { desc = "Toggle breakpoint", nowait = true })
 map("n", "<leader>dc", function() dap.continue() end, { desc = "Debugger continue", nowait = true })
 map("n", "<leader>dl", function() dap.run_last() end, { desc = "Debug last run", nowait = true })
