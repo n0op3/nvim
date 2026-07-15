@@ -55,19 +55,19 @@ map("n", "<leader>cs", function() require("telescope").extensions.aerial.aerial(
 -- Debugging
 local dap = require("dap");
 local dap_ui = require("dapui");
+map("n", "<leader>dr", "<CMD>RustLsp debuggables<CR>", { desc = "Debug Rust", nowait = true })
 map("n", "<leader>dy", function() dap_ui.toggle() end, { desc = "Toggle DAP UI", nowait = true })
+map("n", "<F9>", function() dap.continue() end, { desc = "Debugger continue", nowait = true })
+map("n", "<F10>", function() dap.step_over() end, { desc = "Step over", nowait = true })
+map("n", "<F11>", function() dap.step_into() end, { desc = "Step into", nowait = true })
+map("n", "<F12>", function() dap.step_out() end, { desc = "Step out", nowait = true })
 map("n", "<leader>dd", function() dap.repl.clear() end, { desc = "Clear REPL", nowait = true })
 map("n", "<leader>db", function() dap.toggle_breakpoint() end, { desc = "Toggle breakpoint", nowait = true })
-map("n", "<leader>dc", function() dap.continue() end, { desc = "Debugger continue", nowait = true })
 map("n", "<leader>dl", function() dap.run_last() end, { desc = "Debug last run", nowait = true })
 map("n", "<leader>dq", function()
     dap.terminate()
     dap_ui.close()
 end, { desc = "Terminate debugging", nowait = true })
-map("n", "<leader>dr", "<CMD>RustLsp debuggables<CR>", { desc = "Debug Rust", nowait = true })
-map("n", "<leader>di", function() dap.step_into() end, { desc = "Step into", nowait = true })
-map("n", "<leader>do", function() dap.step_over() end, { desc = "Step over", nowait = true })
-map("n", "<leader>du", function() dap.step_out() end, { desc = "Step out", nowait = true })
 
 -- Git
 map("n", "<leader>gl", telescope.git_commits, { desc = "Git log" })
