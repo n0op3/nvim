@@ -1,13 +1,13 @@
 vim.lsp.config("clangd", {
     cmd = {
         "clangd",
-        "--clang-tidy",
-    },
+        "--clang-tidy"
+    }
 })
 vim.lsp.enable("clangd")
 
 vim.api.nvim_create_user_command('RustSetAllFeatures', function()
-    local clients = vim.lsp.get_clients({ name = 'rust_analyzer' })
+    local clients = vim.lsp.get_clients({ name = 'rust-analyzer' })
     if #clients == 0 then
         print("No rust-analyzer client found. Open a Rust file first.")
         return
@@ -28,4 +28,5 @@ vim.api.nvim_create_user_command('RustSetAllFeatures', function()
     end
 
     print("rust-analyzer features set to 'all' for active clients.")
-end, { desc = 'Enable all Rust features in rust-analyzer' })
+end, { desc = 'Enable all Rust features in rust-analyzer' }
+)
