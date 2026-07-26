@@ -15,4 +15,5 @@ return {
     { "projekt0n/github-nvim-theme",               name = "Github Color Scheme" },
     { "rapidrabbit76/claude.inspired.theme.nvim",  name = "Claude Color Scheme" },
     { "https://codeberg.org/jthvai/lavender.nvim", name = "Lavender Color Scheme" },
+    { "alistairjoelquinn/atelier.nvim",            name = "Atelier Color Scheme" }
 }
