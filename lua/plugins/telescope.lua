@@ -1,24 +1,32 @@
 return {
-    "nvim-telescope/telescope.nvim",
-    tag = "v0.2.1",
-    dependencies = {
-        "nvim-lua/plenary.nvim",
-        -- optional dependencies
-        { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-        { "nvim-tree/nvim-web-devicons" },
-    },
-    opts = {
-        pickers = {
-            buffers = {
-                mappings = {
-                    i = {
-                        ["<C-x>"] = "delete_buffer"
+    {
+        "nvim-telescope/telescope.nvim",
+        tag = "v0.2.1",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            -- optional dependencies
+            { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+            { "nvim-tree/nvim-web-devicons" }
+        },
+        opts = {
+            pickers = {
+                buffers = {
+                    mappings = {
+                        i = {
+                            ["<C-x>"] = "delete_buffer"
+                        }
                     }
+                },
+                find_files = {
+                    find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*", "-L" }
                 }
-            },
-            find_files = {
-                find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*", "-L" },
-            },
+            }
         }
+    },
+    {
+        'andrew-george/telescope-themes',
+        config = function()
+            require('telescope').load_extension('themes')
+        end
     }
 }
