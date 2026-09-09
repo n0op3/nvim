@@ -25,6 +25,7 @@
   "easy-dotnet.nvim": { "branch": "main", "commit": "0a8cfb96e40b985921e6613f31f75811e31b8edf" },
   "friendly-snippets": { "branch": "main", "commit": "6cd7280adead7f586db6fccbd15d2cac7e2188b9" },
   "gitsigns.nvim": { "branch": "main", "commit": "5be654f2232c10ddcad19c1607a67b6b4b78fc29" },
+  "godotdev.nvim": { "branch": "master", "commit": "ccac07c5b18ccbe0c3f90d06129cd17f08e4ac04" },
   "image.nvim": { "branch": "master", "commit": "88351f1f7d9dbae286e671ce3690a49660dd8a5c" },
   "img-clip.nvim": { "branch": "main", "commit": "b6ddfb97b5600d99afe3452d707444afda658aca" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },

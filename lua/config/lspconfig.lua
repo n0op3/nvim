@@ -6,6 +6,7 @@ vim.lsp.config("clangd", {
     }
 })
 vim.lsp.enable("clangd")
+vim.lsp.enable("gdscript")
 
 vim.api.nvim_create_user_command('RustSetAllFeatures', function()
     local clients = vim.lsp.get_clients({ name = 'rust-analyzer' })
