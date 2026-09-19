@@ -1,4 +1,1 @@
-return {
-    "MeanderingProgrammer/render-markdown.nvim",
-    opts = {}
-}
+return { { "yousefhadder/markdown-plus.nvim", ft = "markdown", opts = {} }, { 'jghauser/follow-md-links.nvim' } }
