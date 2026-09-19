@@ -14,7 +14,7 @@ map("v", ";", ":")
 map("n", "j", "gj")
 map("n", "k", "gk")
 map("n", "<C-n>", vim.cmd.bnext)
-map("n", "<C-i>", vim.cmd.bprev)
+map("n", "<C-m>", vim.cmd.bprev)
 map("n", "<leader>x", function()
     local bufs = vim.fn.getbufinfo({ buflisted = 1 })
     if #bufs > 1 then
