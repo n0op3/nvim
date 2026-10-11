@@ -2,8 +2,7 @@ vim.lsp.config("clangd", {
     cmd = {
         "clangd",
         "--background-index",
-        "--clang-tidy",
-        "--query-driver=**/avr-gcc,**/avr-g++"
+        "--clang-tidy"
     }
 })
 vim.lsp.enable("clangd")
