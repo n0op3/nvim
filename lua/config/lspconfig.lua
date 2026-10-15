@@ -1,6 +1,7 @@
 vim.lsp.config("clangd", {
     cmd = {
         "clangd",
+        "--query-driver=/nix/store/*/bin/*,/run/current-system/sw/bin/*,/etc/profiles/per-user/*/bin/*",
         "--background-index",
         "--clang-tidy"
     }
