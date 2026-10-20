@@ -1,6 +1,5 @@
 return {
     'saghen/blink.cmp',
-    dependencies = { 'rafamadriz/friendly-snippets' },
 
     version = '1.*',
 
@@ -22,6 +21,8 @@ return {
         keymap = { preset = 'default' },
         signature = { enabled = true },
         completion = { documentation = { auto_show = true } },
+        snippets = { preset = "luasnip" },
+        sources = { default = { "lsp", "path", "snippets", "buffer" } }
     },
     opts_extend = { "sources.default" }
 }
