@@ -11,6 +11,8 @@ map("n", ";", ":")
 map("v", ";", ":")
 
 -- Movement
+map("v", "J", "dpV")
+map("v", "K", "dkPV")
 map("n", "j", "gj")
 map("n", "k", "gk")
 map("n", "<C-n>", vim.cmd.bnext)

@@ -1,6 +1,7 @@
 require("config.pre-setup")
 require("config.lazy")
 require("config.persist-colorscheme")
+require("config.image-toggle")
 require("options")
 require("snippets.go")
 require("mason-lspconfig").setup()

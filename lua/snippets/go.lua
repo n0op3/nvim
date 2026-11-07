@@ -1,4 +1,5 @@
 local ls = require("luasnip")
+require("luasnip.loaders.from_vscode").lazy_load()
 local s, i = ls.snippet, ls.insert_node
 local fmt = require("luasnip.extras.fmt").fmt
 
