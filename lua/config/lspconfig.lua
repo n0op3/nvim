@@ -1,10 +1,42 @@
+-- On Nix, clangd queries `clang` for system includes, but that clang has no
+-- libstdc++ paths (and clangd's bundled `clang-tool` is missing). Hand it GCC's
+-- include dirs through the standard env vars so <iostream>/<vector> etc. and
+-- std:: completions work even without a compile_commands.json.
+local function clangd_include_env()
+    if vim.fn.executable("g++") ~= 1 then
+        return {}
+    end
+
+    local lines = vim.fn.systemlist("g++ -E -x c++ -v /dev/null 2>&1")
+    local includes = {}
+    local collecting = false
+    for _, line in ipairs(lines) do
+        if line:match("search starts here:") then
+            collecting = true
+        elseif line:match("End of search list") then
+            break
+        elseif collecting and line:match("^%s+/") then
+            table.insert(includes, vim.trim(line))
+        end
+    end
+
+    if #includes == 0 then
+        return {}
+    end
+
+    return {
+        CPLUS_INCLUDE_PATH = table.concat(includes, ":"),
+    }
+end
+
 vim.lsp.config("clangd", {
     cmd = {
         "clangd",
         "--query-driver=/nix/store/*/bin/*,/run/current-system/sw/bin/*,/etc/profiles/per-user/*/bin/*",
         "--background-index",
         "--clang-tidy"
-    }
+    },
+    cmd_env = clangd_include_env(),
 })
 vim.lsp.enable("clangd")
 vim.lsp.enable("gdscript")
